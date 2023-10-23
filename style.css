@@ -1,184 +1,378 @@
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+body {
+    background: linear-gradient(#1d4350, #a43931);
+    color: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-weight: 100;
-    font-family: 'Tilt Neon', sans-serif;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
-
-
-/*log-in-page*/
 
 .container {
     width: 95%;
     margin: 0 auto;
     line-height: 2rem;
-    padding: 2rem 1rem;
+    padding: 1rem .5rem;
 }
 
-.logo {
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.topbar {
+    width: 100%;
+    height: 250px;
+    padding: 5rem 0;
+    background: linear-gradient(#fec163, #de4313);
+    border-bottom-left-radius: 100px;
+}
+
+.topbar .logo {
     width: 100%;
     text-align: center;
-    margin-bottom: 1rem;
 }
 
-form h1 {
-    font-weight: bold;
+.topbar h1 {
+    width: 100%;
+    text-align: right;
+    font-size: 1.2rem;
+    padding-right: 2rem;
+    margin-top: 1.6rem;
 }
 
-form h3 {
-    font-size: 1rem;
-    margin-top: .6rem;
+form {
+    margin-top: 2rem;
+    line-height: 3rem;
 }
 
 form #user,
-form #pass {
+form #mail,
+form #pass,
+form #phone {
     padding-left: 2rem;
     width: 90%;
     height: 50px;
     outline: none;
-    border: 1px solid #22444b;
+    border: none;
+    box-shadow: 0 0 5px 0 gray;
     border-radius: 10px;
     margin-top: 1rem;
 }
 
+form #pass {
+    margin-left: .1rem;
+    margin-top: 1.7rem;
+}
+
 form .fa-user,
-form .fa-lock {
+form .fa-lock,
+form .fa-envelope,
+form .fa-phone {
     position: relative;
     left: 1.5rem;
     color: gray;
 }
 
+form .fa-envelope {
+    font-size: .7rem;
+}
+
+form .forget {
+    font-size: .8rem;
+    text-align: right;
+    width: 95%;
+    display: block;
+}
+
+form .forget a {
+    color: gray;
+    text-decoration: none;
+}
+
 form .button {
     width: 100%;
     text-align: center;
-    margin: 1rem 0;
 }
 
 form #btn {
-    width: 85px;
-    height: 30px;
-    text-align: left;
-    padding: 0 1rem;
-    font-weight: bold;
-    background-color: #22444b;
+    width: 90%;
+    margin: 0 auto;
+    height: 38px;
+    text-align: center;
+    padding: 0 .5rem;
+    font-size: 1rem;
+    background-color: orangered;
     color: #fff;
     outline: none;
     border: none;
-    border-radius: 5%;
+    border-radius: 50px;
     transition: all .3s ease;
 }
 
-form #btn:hover {
+form #btn:hover,
+form #sign-up-btn:hover {
     cursor: pointer;
     scale: 1.1;
 }
 
+form #sign-up-btn {
+    width: 90%;
+    margin: 0 auto;
+    height: 38px;
+    text-align: center;
+    padding: 0 .5rem;
+    font-size: 1rem;
+    background-color: orangered;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    transition: all .3s ease;
+    margin-top: 1rem;
+}
+
 form .fa-arrow-right {
     position: relative;
-    right: 2rem;
+    right: 1.8rem;
     color: #fff;
 }
 
 form p {
     text-align: center;
     font-size: 0.9rem;
+    color: gray;
+    margin-top: 2rem;
 }
 
-form .sign-up {
-    color: #22444b;
+form .sign-up,
+form .sign-in {
+    color: orangered;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
-
-/*header*/
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header {
+.login-page {
     width: 100%;
+    background: linear-gradient(#1d4350, #a43931);
+    box-shadow: 0 0 5px 0;
+    padding: .4rem .7rem;
+    border-radius: 5px;
+    margin-top: 1rem;
 }
 
-nav {
+.login-page h1 {
+    font-size: 6vw;
+}
+
+.login-page h5 {
+    font-weight: 300;
+}
+
+.btn {
     width: 100%;
-    background-color: #22444b;
+    height: 35px;
+    background-color: orangered;
+    border-radius: 5px;
+    border: none;
     color: #fff;
-    padding: 1rem 1rem 0 1rem;
 }
 
-nav .logo-2,
-nav .menu {
-    width: 25%;
-}
-
-nav h1 {
-    width: 50%;
+.login-page p {
     text-align: center;
+    font-size: 4vw;
 }
 
-nav .menu {
-    text-align: right;
-    z-index: 10;
-}
-
-nav .groups {
-    width: 100%;
-    padding-top: 2rem;
-}
-
-nav .groups h3 {
-    width: 33%;
-    text-align: center;
+.login-page .log-in {
+    color: orangered;
+    text-decoration: underline;
     font-size: 1rem;
 }
 
-nav .groups a {
-    text-decoration: none;
-    color: #fff;
+.watchlist .index {
+    font-weight: 300;
 }
 
-.navbar {
+.watchlist .index-1 {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.watchlist .index-2:active {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.prices-section {
+    padding-top: 0rem;
+    margin-bottom: 6rem;
+}
+
+.prices-section span {
+    font-weight: 300;
+    display: block;
+    font-size: .6rem;
+}
+
+.prices-section h4 {
+    font-weight: 400;
+    font-size: .7rem;
+    width: 20%;
+    text-align: center;
+}
+
+.prices-section .change {
+    width: 30%;
+    text-align: right;
+}
+
+.prices-section h3 {
+    font-size: 1rem;
+}
+
+.prices-section .light-bold {
+    font-weight: 400;
+    font-size: .7rem;
+}
+
+.prices-section .bold {
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.prices-section .swiper {
     width: 100%;
-    background-color: #fff;
+}
+
+.prices-section .price-list,
+.prices-section .price-content {
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.prices-section .price-content {
+    line-height: 1.2rem;
+    padding: 1rem 0;
+}
+
+footer {
+    width: 100%;
+    background: linear-gradient(#1d4350, #a43931);
+    text-align: center;
+    padding: 0rem 1rem;
+    padding-top: .7rem;
     position: fixed;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    font-size: .8rem;
+    z-index: 10;
+}
+
+footer .box {
+    z-index: 100;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .trade {
+    color: orangered;
+}
+
+footer .round-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
-    display: none;
-    z-index: 9;
 }
 
-.navbar .title {
-    width: 100%;
-    padding: 3rem 0;
-    background-color: #22444b;
+footer .round {
+    width: 60px;
+    height: 40px;
+    background-color: #a43931;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
 }
 
-.navbar .title span {
-    padding-left: 2rem;
+footer .discover {
+    background-color: orangered;
+    border-radius: 100px;
+    padding: .5rem;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -28px;
+    left: -.7vw;
+    line-height: .9rem;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px #fff;
 }
 
-.navbar li {
+footer .discover ul {
     list-style: none;
-    line-height: 2.4rem;
-    padding-left: 1rem;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    display: flex;
+    flex-direction: row;
+    display: none;
 }
 
-.navbar li a {
-    text-decoration: none;
-    color: gray;
+footer .discover ul li {
+    background: linear-gradient(#1d4350, #a43931);
+    box-shadow: 0px 0px 10px 0px #fff;
+    margin: 0 .3rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: .6rem;
 }
 
-.navbar li i {
-    color: gray;
-    margin-right: 1.2rem;
+footer .discover ul li a {
+    font-size: .4rem;
+}
+
+footer .discover ul .a,
+footer .discover ul .b,
+footer .discover ul .c,
+footer .discover ul .d {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+footer .discover ul .a {
+    left: 30px;
+    top: 10px;
+}
+
+footer .discover ul .b {
+    left: 60px;
+    top: -40px;
+}
+
+footer .discover ul .c {
+    left: 120px;
+    top: -40px;
+}
+
+footer .discover ul .d {
+    left: 150px;
+    top: 10px;
 }
 
 #graph-section,
@@ -190,14 +384,17 @@ nav .groups a {
 #deal-section #close-deal-section {
     width: 95%;
     margin: 0 auto;
-    color: gray;
+    color: #fff;
+    margin-bottom: 6rem;
 }
 
 #deal-section .open-deal,
 #deal-section .close-deal {
     margin-top: 1rem;
     padding: 1rem 0.4rem;
-    box-shadow: 0px 0px 5px 0px #000;
+    box-shadow: 0px 0px 10px 0px #fff;
+    line-height: 1rem;
+    border-radius: 5px;
 }
 
 #deal-section .left-deal,
@@ -205,22 +402,29 @@ nav .groups a {
     width: 50%;
 }
 
-#deal-section .right-deal span {
+#deal-section p {
+    font-size: 5vw;
+}
+
+#deal-section span {
+    font-size: 3.5vw;
+}
+
+#deal-section .right-deal td {
     display: block;
     text-align: right;
-    font-size: .9rem;
+    font-size: 3.5vw;
 }
 
 #deal-section .blue {
-    color: blue;
+    color: red;
+    font-size: 4vw;
 }
 
 #deal-section .green {
     color: green;
+    font-size: 4vw;
 }
-
-
-/*buttons*/
 
 .deals-btn {
     width: 100%;
@@ -231,7 +435,7 @@ nav .groups a {
 .btns {
     width: 50%;
     height: 50px;
-    background-color: #22444b;
+    background-color: orangered;
     color: #fff;
     border: none;
     transition: all .4s ease;
@@ -239,102 +443,28 @@ nav .groups a {
 }
 
 .close-btn {
-    border: 1px solid #22444b;
+    border: 1px solid orangered;
     background: none;
-    color: #22444b;
+    color: orangered;
 }
 
 .open-btn:hover {
-    border: 1px solid #22444b;
+    border: 1px solid orangered;
     background: none;
-    color: #22444b;
+    color: orangered;
 }
 
 .close-btn:hover {
-    background-color: #22444b;
+    background-color: orangered;
     border: none;
-    color: #fff;
-}
-
-
-/*price-box*/
-
-.price-box {
-    width: 95%;
-    margin: 0 auto;
-    margin-top: 2rem;
-    padding: .7rem 0;
-    box-shadow: 0px 0px 5px 0px #000;
-}
-
-.price-box .left-box,
-.price-box .mid-box,
-.price-box .right-box {
-    width: 33%;
-}
-
-.price-box span {
-    text-align: center;
-    display: block;
-}
-
-
-/*portfolio*/
-
-.portfolio {
-    width: 100%;
-    padding: 1rem 1rem;
     color: #fff;
 }
 
 .profile {
     width: 100%;
-    justify-content: flex-start;
-    background-color: #22444b;
     color: #fff;
-    padding: 1rem 1rem;
+    padding-left: .5rem;
 }
-
-.profile a {
-    color: #fff;
-}
-
-.profile h2 {
-    padding-left: 2rem;
-}
-
-.profile .menu {
-    width: 50%;
-    z-index: 10;
-    text-align: right;
-}
-
-.id {
-    color: #fff;
-}
-
-.portfolio .boxes {
-    width: 100%;
-    background-color: #22444b;
-    text-align: center;
-    margin-top: 1rem;
-    border-radius: 5px;
-    padding: 1rem;
-}
-
-.portfolio .box-1,
-.portfolio .box-2,
-.portfolio .box-3,
-.portfolio .box-4 {
-    width: 48%;
-}
-
-.portfolio .boxes span {
-    display: block;
-}
-
-
-/*payout*/
 
 .payout-section {
     width: 100%;
@@ -369,15 +499,40 @@ nav .groups a {
 
 .payout-section #submit-btn {
     width: 90%;
-    height: 40px;
-    background-color: #22444b;
+    height: 35px;
+    background-color: orangered;
     border-radius: 5px;
     border: none;
     color: #fff;
 }
 
+.portfolio {
+    width: 100%;
+    color: #fff;
+    margin-bottom: 6rem;
+}
 
-/*change-password*/
+.portfolio .boxes {
+    width: 100%;
+    background-color: #1d4350;
+    color: #cecece;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px 0px #fff;
+}
+
+.portfolio .box-1,
+.portfolio .box-2,
+.portfolio .box-3,
+.portfolio .box-4 {
+    width: 49%;
+}
+
+.portfolio .boxes span {
+    display: block;
+}
 
 .change-password {
     width: 100%;
@@ -405,11 +560,155 @@ nav .groups a {
 }
 
 .change-password #reset {
-    width: 20%;
+    width: 25%;
     height: 30px;
-    background-color: #22444b;
+    background-color: orangered;
     border-radius: 5px;
     border: none;
     color: #fff;
     border-radius: 50px;
+}
+
+.withdraw-history,
+.add-fund {
+    margin: 2rem 0;
+    margin-bottom: 6rem;
+}
+
+.withdraw-history .date-section,
+.withdraw-history .history {
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.withdraw-history .date-section input {
+    width: 100%;
+    margin: .5rem 0;
+    padding: .5rem .4rem;
+    background: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+}
+
+.withdraw-history .date-section .submit {
+    border: none;
+    background-color: orangered;
+}
+
+.withdraw-history .history ul,
+.add-fund .history ul {
+    width: 60%;
+    list-style: none;
+    font-size: .8rem;
+}
+
+.withdraw-history .history .history-right,
+.add-fund .history .history-right {
+    width: 40%;
+    text-align: right;
+}
+
+.highlight {
+    color: rgb(181, 139, 181);
+}
+
+.pending-btn,
+.detail-btn {
+    width: 70%;
+    height: 25px;
+    text-align: center;
+    background-color: #ee9b00;
+    border-radius: 50px;
+    font-size: .7rem;
+    border: none;
+}
+
+.detail-btn {
+    width: 80%;
+    background-color: #d5a953;
+    border-radius: 5px;
+}
+
+.rejected {
+    background-color: red;
+}
+
+.complete {
+    background-color: green;
+}
+
+.fa-info-circle {
+    margin-right: .4rem;
+}
+
+.add-fund .payment {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+
+.dropdown {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 1rem;
+    outline: none;
+    border: none;
+    margin: 1rem 0 2rem 0;
+}
+
+.id {
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.id-btn {
+    margin-left: 1rem;
+    padding: .7rem;
+}
+
+.add-fund .history {
+    border: 1px solid #000;
+    padding: 0 1rem;
+    line-height: 2rem;
+}
+
+.add-fund .history ul {
+    margin: 2rem 0;
+}
+
+.promo-code {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.promo-code #promo {
+    padding-left: 2rem;
+    width: 90%;
+    height: 50px;
+    outline: none;
+    border: 1px solid #22444b;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.promo-code .submit {
+    width: 90%;
+    height: 35px;
+    background-color: orangered;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    margin-top: 1rem;
 }

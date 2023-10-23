@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Sign Up</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
@@ -22,31 +22,33 @@
 </head>
 
 <body>
-    <!--login-page-->
+    <!--signup-page-->
     <div class="container-fluid">
         <div class="topbar">
             <div class="logo">
                 <img src="../img/th.jfif" alt="" width="20%">
             </div>
-            <h1>Login</h1>
+            <h1>Sign Up</h1>
         </div>
         <form action="#">
             <div class="form-group">
                 <i class="fa fa-user"></i>
-                <input type="text" name="username" id="user" placeholder="USERNAME">
+                <input type="text" name="username" id="user" placeholder="NAME">
             </div>
             <div class="form-group">
-                <i class="fa fa-lock"></i>
-                <input type="password" name="password" id="pass" placeholder="PASSWORD">
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="email" id="mail" placeholder="EMAIL">
             </div>
-            <div class="forget">
-                <a href="#">Forget Password ?</a>
-            </div>
-            <div class="button">
-                <input type="submit" value="LOGIN" id="btn">
+            <div class="form-group">
+                <i class="fa fa-phone"></i>
+                <input type="number" name="number" id="phone" placeholder="Phone">
             </div>
 
-            <p>Does not have account? <a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/html%20files/sign_up.html?username=&email=&password=#" class="sign-up">Register</a></p>
+            <div class="button">
+                <input type="submit" value="SIGN UP" id="sign-up-btn">
+            </div>
+
+            <p>Does not have account? <a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/html%20files/login.html?username=&password=#" class="sign-in">Sign In</a></p>
         </form>
     </div>
 </body>

@@ -4,48 +4,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add fund</title>
+    <title>Add Fund</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../style.css">
 
     <style>
-        .profile .menu {
-            width: 38%;
+        body {
+            background: #1d4350;
+        }
+        
+        footer .round {
+            background-color: #1d4350;
         }
     </style>
 </head>
 
 <body>
-    <div class="profile flex">
-        <a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/index.html"><i class="fa fa-arrow-left"></i></a>
-        <h2>Add Fund</h2>
-        <div class="menu">
-            <i class="fa fa-bars"></i>
+    <div class="container">
+        <div class="profile flex">
+            <h2>Add Fund</h2>
         </div>
     </div>
 
-    <div class="navbar">
-        <div class="title">
-            <span class="id">Dhananjay : 59501026</span>
+    <div class="add-fund">
+        <div class="payment">
+            <h3>Payment Method</h3>
+            <select class="dropdown">
+            <option value="1">UPI</option>
+            <option value="2">Bank Details</option>
+            <option value="2">USDT Trc20</option>
+            <option value="4">BTC</option>
+        </select>
+            <img src="../img/qr.jfif" alt="" width="100%">
+            <div class="id flex">
+                <p>ID</p>
+                <button class="id-btn">akhna-1@paytm <span class="fa fa-clipboard"></span></button>
+            </div>
         </div>
-        <ul>
-            <li><i class="fa fa-home"></i><a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/index.html">Home</a></li>
-            <li><i class="fa fa-home"></i><a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/html%20files/portfolio.html">Portfolio</a></li>
-            <li><i class="fa fa-home"></i><a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/html%20files/ledger.html">Ledger</a></li>
-            <li><i class="fa fa-home"></i><a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/html%20files/payout.html">Payout</a></li>
-            <li><i class="fa fa-home"></i><a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/html%20files/deal.html">Deal</a></li>
-            <li><i class="fa fa-home"></i><a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/html%20files/add_fund.html">Add Fund</a></li>
-            <li><i class="fa fa-home"></i><a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/html%20files/password.html">Change Password</a></li>
-            <li><i class="fa fa-home"></i><a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/html%20files/login.html">Logout</a></li>
-        </ul>
+
+        <div class="history flex">
+            <ul class="history-left">
+                <li>Deposit Date</li>
+                <li>Method</li>
+                <li>Account</li>
+                <li>Amount</li>
+                <li>Status</li>
+            </ul>
+            <ul class="history-right">
+                <li>14-Oct-2023</li>
+                <li>Deposit</li>
+                <li>demo@gmail.com</li>
+                <li>$5</li>
+                <li><button class="pending-btn complete">Complete</button></li>
+            </ul>
+        </div>
+        <div class="history flex">
+            <ul class="history-left">
+                <li>Deposit Date</li>
+                <li>Method</li>
+                <li>Account</li>
+                <li>Amount</li>
+                <li>Status</li>
+            </ul>
+            <ul class="history-right">
+                <li>14-Oct-2023</li>
+                <li>Deposit</li>
+                <li>demo@gmail.com</li>
+                <li>$5</li>
+                <li><button class="pending-btn complete">Complete</button></li>
+            </ul>
+        </div>
     </div>
 
-    <img src="../img/qr.jfif" alt="" width="100%">
+    <footer class="flex">
+        <div class="round-box">
+            <div class="round"></div>
+        </div>
+        <div class="box trade">
+            <a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/index.html">
+                <i class="fa fa-home"></i>
+                <h6>Trades</h6>
+            </a>
+        </div>
+
+        <div class="box order">
+            <a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/html%20files/deal.html">
+                <i class="fa fa-home"></i>
+                <h6>Orders</h6>
+            </a>
+        </div>
+
+        <div class="box discover">
+            <i class="fa fa-home"></i>
+            <h6>Discover</h6>
+            <ul class="options">
+                <li class="a"><a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/html%20files/add_fund.html">Add Fund</a></li>
+                <li class="b"><a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/html%20files/password.html">Change Password</a></li>
+                <li class="c"><a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/html%20files/payout.html">Withdrawal</a></li>
+                <li class="d"><a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/html%20files/withdraw_history.html">Withdrawal History</a></li>
+            </ul>
+        </div>
+
+        <div class="box promo">
+            <a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/html%20files/promo.html">
+                <i class="fa fa-home"></i>
+                <h6>Promo</h6>
+            </a>
+        </div>
+
+        <div class="box my-profile">
+            <a href="file:///C:/Users/thaku/OneDrive/Desktop/forex%20world/html%20files/portfolio.html">
+                <i class="fa fa-home"></i>
+                <h6>Profile</h6>
+            </a>
+        </div>
+    </footer>
+
+
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="../script.js"></script>
+
 </body>
 
 </html>
